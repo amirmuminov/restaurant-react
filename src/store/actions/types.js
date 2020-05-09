@@ -1,0 +1,12 @@
+export const GET_MEALS = 'GET_MEALS';
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';
+export const GET_ROLES = 'GET_ROLES';
+export const SIGN_UP = 'SIGN_UP';
+export const GET_STAFF = 'GET_STAFF';
+export const DELETE_STAFF_MEMBER = 'DELETE_STAFF_MEMBER';
+export const GET_ORDERS = 'GET_ORDERS';
+export const ADD_ORDER = 'ADD_ORDER';
+export const CALCULATE_BILL = 'CALCULATE_BILL';
+export const EDIT_ORDER = 'EDIT_ORDER';
+export const GET_STOCKS = 'GET_STOCKS';

@@ -1,0 +1,43 @@
+.footer{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.footer-item{
+    padding-bottom: 30px;
+}
+
+.footer-item-header{
+    color: white;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.footer-links li:hover{
+    color: blue;
+    transition: .3s;
+}
+
+.contact-form{
+    width: 100%;
+}
+
+.contact-form-button{
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
