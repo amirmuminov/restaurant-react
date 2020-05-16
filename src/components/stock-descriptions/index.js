@@ -21,6 +21,7 @@ function StockDescriptions(props) {
                                                             endDate={stock.endingDate}
                                                             imageLink={stock.imageLink}
                                                             meals={stock.meals}
+                                                            category={stock.stockCategory.name}
     />);
 
     return (

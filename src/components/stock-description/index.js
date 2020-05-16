@@ -23,6 +23,7 @@ function StockDescription(props){
             </div>
             <Descriptions bordered title="Stock Title" size={"default"} className="stock" column={1}>
                 <Descriptions.Item label="Description">{props.description}</Descriptions.Item>
+                <Descriptions.Item label="Description">{props.category.replace("_", " ")}</Descriptions.Item>
                 <Descriptions.Item label="Start Date">{props.startDate.substr(0, 10)}</Descriptions.Item>
                 <Descriptions.Item label="End Date">{props.endDate.substr(0, 10)}</Descriptions.Item>
                 <Descriptions.Item label="Meals">{meals}</Descriptions.Item>

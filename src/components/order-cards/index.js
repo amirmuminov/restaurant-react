@@ -18,6 +18,12 @@ function OrderCards(props){
 
     const [orderAddModalVisibility, setOrderAddModalVisibility] = useState(false);
 
+    let authorities = [];
+
+    if(localStorage.getItem("authorities") !== null){
+        authorities = localStorage.getItem("authorities").split(",");
+    }
+
     const orderList = orders.map(order => <OrderCard id={order.id}
                                                      status={order.status}
                                                      date={order.orderDate}
@@ -34,7 +40,11 @@ function OrderCards(props){
                   </Row>
               </Col>
               <Col span={6}>
-                  <Button type={"primary"} className="add-button" onClick={() => setOrderAddModalVisibility(true)}>New Order</Button>
+                  {
+                      authorities.indexOf("WAITER", 0) !== -1 && (
+                          <Button type={"primary"} className="add-button" onClick={() => setOrderAddModalVisibility(true)}>New Order</Button>
+                      )
+                  }
               </Col>
               <OrderAddModal orderAddModalVisibility={orderAddModalVisibility} setOrderAddModalVisibility={setOrderAddModalVisibility}/>
           </Row>
