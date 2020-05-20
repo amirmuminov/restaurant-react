@@ -17,7 +17,7 @@ function MealCards(props){
     const {meals} = props.mealReducer;
 
     const mealList = meals.map(meal => (
-        <MealCard span={8} name={meal.name} price={"$" + meal.price} link={meal.imageLink} categoryName={meal.category.name}/>
+        <MealCard span={8} name={meal.name} price={"$" + meal.price} link={meal.imageLink} categoryName={meal.mealCategory.name}/>
     ));
 
     return(
